@@ -21,7 +21,7 @@ fn main() {
             "cargo:rustc-cfg={}",
             VALUE_BAG_CAPTURE_FALLBACK.to_lowercase()
         );
-    } else if rustc::is_feature_flaggable().unwrap_or(false) {
+    } else if version_check::is_feature_flaggable().unwrap_or(false) {
         println!(
             "cargo:rustc-cfg={}",
             VALUE_BAG_CAPTURE_CONST_TYPE_ID.to_lowercase()

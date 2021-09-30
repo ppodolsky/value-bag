@@ -97,6 +97,5 @@ version = "0.2"
 [dev-dependencies.wasm-bindgen-test]
 version = "0.3"
 
-[build-dependencies.rustc]
+[build-dependencies.version_check]
 version = "0.9"
-package = "version_check"
